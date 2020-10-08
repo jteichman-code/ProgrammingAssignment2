@@ -1,3 +1,6 @@
+## *** Please note: added additional comments after submission and completion
+## *** of the assignment.
+
 ## Assignment:  Caching the Inverse of a Matrix
 
 ## Matrix inversion is usually a costly computation and there may be some 
@@ -8,7 +11,7 @@
 ## This function creates a special "matrix" object that can cache its inverse.
 
 makeCacheMatrix <- function(mat = matrix()) {
-    ## Initializes the inverse
+    ## Initializes the inverse, temp object to store the results.
     inv <- NULL
     
     ## Sets the matriX
@@ -38,6 +41,9 @@ makeCacheMatrix <- function(mat = matrix()) {
 ## makeCacheMatrix() above. If the inverse has already been calculated (and the 
 ## matrix has not changed), then the cachesolve() should retrieve the inverse 
 ## from the cache.
+
+## @param x   - the result of the previous call to makeCacheMatrix
+## @param ... - additional parameters needed to solve cachSolve
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
